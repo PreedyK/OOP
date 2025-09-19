@@ -1,9 +1,9 @@
 myStudents = {}
 while True:
-    print("1.: Add a Student:")
-    print("2: Delete a Student:")
-    print("3: Edit a Student:")
-    print("4: Display a Student:")
+    print("1.: Add a Student")
+    print("2: Delete a Student")
+    print("3: Edit a Student")
+    print("4: Display a Student")
     print("5: Quit")
 
     option = input("Enter option:")
@@ -16,10 +16,9 @@ while True:
         Lab4 = int(input("Enter Points for Lab 4:"))
         Lab5 = int(input("Enter Points for Lab 5:"))
         sID = input("Enter Student ID:")
-        ttotal= Lab1+Lab2+Lab3+Lab4+Lab5
-        aavg= ttotal/5
-        ppercent = aavg*10
-
+        total= Lab1+Lab2+Lab3+Lab4+Lab5
+        avg= total/5
+        percent = avg*10
 
         myStudents.update({sID:{
                                 "Name":student,
@@ -28,15 +27,15 @@ while True:
                                 "Points for Lab 3":Lab3,
                                 "Points for Lab 4":Lab4,
                                 "Points for Lab 5":Lab5,
-                                "Total": ttotal,
-                                "Percent": ppercent,
-                                "Average": aavg
+                                "Total": total,
+                                "Percent": percent,
+                                "Average": avg
                                 }})
 
         print(myStudents)
-        print("Total:",ttotal)
-        print("Percent:", ppercent)
-        print("Average:", aavg)
+        print("Total:",total)
+        print("Percent:", percent)
+        print("Average:", avg)
 
 
     elif option == "2":
@@ -46,14 +45,14 @@ while True:
     elif option == "3":
         sID = input("Enter Student ID you wish to edit:")
         student = input("Enter Student name:")
-        Lab1 = input("Enter Points for Lab 1:")
-        Lab2 = input("Enter Points for Lab 2:")
-        Lab3 = input("Enter Points for Lab 3:")
-        Lab4 = input("Enter Points for Lab 4:")
-        Lab5 = input("Enter Points for Lab 5:")
-        ttotal = Lab1 + Lab2 + Lab3 + Lab4 + Lab5
-        aavg = ttotal / 5
-        ppercent = aavg * 10
+        Lab1 = int(input("Enter Points for Lab 1:"))
+        Lab2 = int(input("Enter Points for Lab 2:"))
+        Lab3 = int(input("Enter Points for Lab 3:"))
+        Lab4 = int(input("Enter Points for Lab 4:"))
+        Lab5 = int(input("Enter Points for Lab 5:"))
+        total = Lab1+Lab2+Lab3+Lab4+Lab5
+        avg = total/5
+        percent = avg * 10
         myStudents.update({sID: {
                             "Name": student,
                             "Points for Lab 1": Lab1,
@@ -61,9 +60,9 @@ while True:
                             "Points for Lab 3": Lab3,
                             "Points for Lab 4": Lab4,
                             "Points for Lab 5": Lab5,
-                            "Total": ttotal,
-                            "Percent": ppercent,
-                            "Average": aavg
+                            "Total": total,
+                            "Percent": percent,
+                            "Average": avg
         }})
 
 
