@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="Page-1" id="5pijpgtcPQcIirXd0bRt">
+    <mxGraphModel dx="1426" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-1" value="Products" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="308" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-2" value="properties&lt;div&gt;Object Photo&amp;nbsp;&lt;/div&gt;&lt;div&gt;Object Description&amp;nbsp;&lt;/div&gt;&lt;div&gt;Price&lt;/div&gt;&lt;div&gt;Details&lt;/div&gt;&lt;div&gt;Reviews&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-1">
+          <mxGeometry y="26" width="160" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-1">
+          <mxGeometry y="160" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-4" value="functions&lt;div&gt;Add a product()&lt;/div&gt;&lt;div&gt;remove Product()&lt;/div&gt;&lt;div&gt;Edit product()&lt;/div&gt;&lt;div&gt;review product()&lt;/div&gt;&lt;div&gt;return product()&lt;/div&gt;&lt;div&gt;view product()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-1">
+          <mxGeometry y="168" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-6" value="Customers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="160" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-7" value="properties&lt;div&gt;Name&lt;/div&gt;&lt;div&gt;Age&lt;/div&gt;&lt;div&gt;Gender&lt;/div&gt;&lt;div&gt;Address&lt;/div&gt;&lt;div&gt;Card Number&amp;nbsp;&lt;/div&gt;&lt;div&gt;Profile Picture&lt;/div&gt;&lt;div&gt;ID Number&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-6">
+          <mxGeometry y="26" width="160" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-6">
+          <mxGeometry y="160" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-9" value="functions&lt;div&gt;Add to cart()&lt;/div&gt;&lt;div&gt;Remove from Cart()&amp;nbsp;&lt;/div&gt;&lt;div&gt;Save to List()&amp;nbsp;&lt;/div&gt;&lt;div&gt;Purchase now()&lt;/div&gt;&lt;div&gt;Return Item()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-6">
+          <mxGeometry y="168" width="160" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7gRK4OOXIpwO8t9wIC1t-2" target="7gRK4OOXIpwO8t9wIC1t-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.006;entryY=0.461;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7gRK4OOXIpwO8t9wIC1t-4" target="7gRK4OOXIpwO8t9wIC1t-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-12" value="Cart" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-13" value="Products in cart&lt;div&gt;total price&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-12">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-12">
+          <mxGeometry y="100" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-15" value="Add to cart()&lt;div&gt;Remove from cart()&lt;/div&gt;&lt;div&gt;view cart()&lt;/div&gt;&lt;div&gt;checkout()&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-12">
+          <mxGeometry y="108" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-16" value="Card" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="440" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-17" value="card number&lt;div&gt;amount on card&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-16">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-16">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-19" value="use card&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7gRK4OOXIpwO8t9wIC1t-16">
+          <mxGeometry y="88" width="160" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="7gRK4OOXIpwO8t9wIC1t-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.019;entryY=0.716;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="7gRK4OOXIpwO8t9wIC1t-17" target="7gRK4OOXIpwO8t9wIC1t-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="493" />
+              <mxPoint x="680" y="202" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
