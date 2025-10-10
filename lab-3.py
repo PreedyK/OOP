@@ -53,8 +53,8 @@ class User:
         self.phone = input("Enter User Phone Number:")
         self.email = input("Enter User Email:")
 
-    def borrow_book(self, b1):
-        self.books_borrowed.append(b1)
+    def borrow_book(self):
+        self.books_borrowed.append(input("Enter book you want to borrow:"))
 
     def display_user(self):
         print("User ID:", self.user_id)
