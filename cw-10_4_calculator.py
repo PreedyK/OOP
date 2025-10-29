@@ -13,11 +13,14 @@ def show(n):
             final_answer = eval(answer.get(1.0, "end-1c"))
             answer.insert(tk.INSERT, n)
             answer.insert(tk.INSERT, final_answer)
+        elif n =="C":
+            answer.delete(1.0, END)
+        elif n =="Del":
+            current_text = answer.get(1.0, "end-1c")
+            answer.delete(1.0, END)
+            answer.insert(1.0, current_text[:-1])
         else:
             answer.insert(tk.INSERT, n)
-        if n =="C":
-            answer.delete(1.0, END)
-
     except:
         answer.delete(1.0, END)
 
@@ -68,5 +71,8 @@ Bequal.place(x=300, y=600)
 
 Bclear = Button(top, text="C", width=10, height=5, command=lambda: show("C"))
 Bclear.place(x=100, y=600)
+
+Bdelete = Button(top, text="Del", width=10, height=5, command=lambda: show("Del"))
+Bdelete.place(x=100, y=700)
 
 top.mainloop()
