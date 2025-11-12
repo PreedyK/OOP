@@ -4,23 +4,29 @@ from turtledemo.sorting_animate import show_text
 top = tk.Tk()
 top.geometry("700x700")
 
-add = tk.Entry(top, width=35)
-add.place(x=100, y=100)
+q_entry = tk.Text(top, width=35, height=2)
+q_entry.place(x=100, y=100)
+
+s_entry = tk.Text(top, width=35, height=2)
+s_entry.place(x=100, y=250)
 
 class Queue:
     def __init__(self):
         self.element = []
 
     def enqueue(self):
-        x = q_valueTxt.get(1.0, "end-1c").strip()
+        x = q_entry.get(1.0, "end-1c").strip()
         if x:
             self.element.append(x)
-            q_valuetxt.delete(1.0, "end")
+            q_entry.delete(1.0, "end")
         else:
             print("Please Enter a Value First.")
 
     def dequeue(self):
-        self.element.remove(0)
+        if self.element:
+            removed = self.element.pop(0)
+        else:
+            print("Queue is Empty. ")
 
     def display_queue(self):
         print("Elements in Queue:")
@@ -34,15 +40,18 @@ class Stack:
         self.element = []
 
     def push(self):
-        value = s_text_Box.get(1.0, "end-1c").strip()
+        value = s_entry.get("1.0", "end-1c").strip()
         if value:
             self.element.append(value)
-            s_text_Box.delete(1.0, "end")
+            s_entry.delete("1.0", "end")
         else:
             print("Please Enter a Value First.")
 
     def pop(self):
-        self.element.pop()
+        if self.element:
+            removed = self.element.pop()
+        else:
+            print("Stack is Empty.")
 
     def display_stack(self):
         print("Elements in Stack:")
@@ -52,7 +61,7 @@ class Stack:
 
 #Main Code
 q1 = Queue()
-q2 = Queue()
+s1 = Stack()
 
 B1 = tk.Button(top, text="Create Queue", width=10, height=5)
 B1.place(x=100, y=150)
@@ -66,11 +75,13 @@ B3.place(x=300, y=150)
 B4 = tk.Button(top, text="Display Queue", width=10, height=5, command=q1.display_queue)
 B4.place(x=400, y=150)
 
+B5 = tk.Button(top, text="Push", width=10, height=2, command=s1.push)
+B5.place(x=100, y=300)
+
+B6 = tk.Button(top, text="Pop", width=10, height=2, command=s1.pop)
+B6.place(x=200, y=300)
+
+B7 = tk.Button(top, text="Display Stack", width=10, height=2, command=s1.display_stack)
+B7.place(x=300, y=300)
+
 top.mainloop()
-
-s1 = Stack()
-s2 = Stack()
-
-s1.push()
-s1.pop()
-s1.display_stack()
