@@ -10,6 +10,12 @@ q_entry.place(x=100, y=100)
 s_entry = tk.Text(top, width=35, height=2)
 s_entry.place(x=100, y=250)
 
+q_display = tk.Text(top, width=35, height=2)
+q_display.place(x=100, y=400)
+
+s_display = tk.Text(top, width=35, height=2)
+s_display.place(x=100, y=500)
+
 class Queue:
     def __init__(self):
         self.element = []
@@ -32,7 +38,7 @@ class Queue:
         print("Elements in Queue:")
         for i in self.element:
             print(i)
-        print()
+            q_display.insert(tk.INSERT, i+";")
 
 
 class Stack:
@@ -57,31 +63,29 @@ class Stack:
         print("Elements in Stack:")
         for i in self.element:
             print(i)
+            s_display.insert(tk.INSERT, i+";")
 
 
 #Main Code
 q1 = Queue()
 s1 = Stack()
 
-B1 = tk.Button(top, text="Create Queue", width=10, height=5)
+B1 = tk.Button(top, text="Enqueue", width=10, height=2, command=q1.enqueue)
 B1.place(x=100, y=150)
 
-B2 = tk.Button(top, text="Enqueue", width=10, height=5, command=q1.enqueue)
+B2 = tk.Button(top, text="Dequeue", width=10, height=2, command=q1.dequeue)
 B2.place(x=200, y=150)
 
-B3 = tk.Button(top, text="Dequeue", width=10, height=5, command=q1.dequeue)
+B3 = tk.Button(top, text="Display Queue", width=10, height=2, command=q1.display_queue)
 B3.place(x=300, y=150)
 
-B4 = tk.Button(top, text="Display Queue", width=10, height=5, command=q1.display_queue)
-B4.place(x=400, y=150)
+B4 = tk.Button(top, text="Push", width=10, height=2, command=s1.push)
+B4.place(x=100, y=300)
 
-B5 = tk.Button(top, text="Push", width=10, height=2, command=s1.push)
-B5.place(x=100, y=300)
+B5 = tk.Button(top, text="Pop", width=10, height=2, command=s1.pop)
+B5.place(x=200, y=300)
 
-B6 = tk.Button(top, text="Pop", width=10, height=2, command=s1.pop)
-B6.place(x=200, y=300)
-
-B7 = tk.Button(top, text="Display Stack", width=10, height=2, command=s1.display_stack)
-B7.place(x=300, y=300)
+B6 = tk.Button(top, text="Display Stack", width=10, height=2, command=s1.display_stack)
+B6.place(x=300, y=300)
 
 top.mainloop()
