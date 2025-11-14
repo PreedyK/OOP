@@ -13,7 +13,7 @@ s_entry.place(x=100, y=250)
 q_display = tk.Text(top, width=35, height=2)
 q_display.place(x=100, y=400)
 
-s_display = tk.Text(top, width=35, height=2)
+s_display = tk.Text(top, width=35, height=6)
 s_display.place(x=100, y=500)
 
 class Queue:
@@ -35,6 +35,8 @@ class Queue:
             print("Queue is Empty. ")
 
     def display_queue(self):
+        q_display.delete("1.0", "end")
+        q_display.insert(tk.INSERT, "Queue: ")
         print("Elements in Queue:")
         for i in self.element:
             print(i)
@@ -60,10 +62,18 @@ class Stack:
             print("Stack is Empty.")
 
     def display_stack(self):
-        print("Elements in Stack:")
-        for i in self.element:
-            print(i)
-            s_display.insert(tk.INSERT, i+";")
+        s_display.delete("1.0", "end")
+        s_display.insert(tk.INSERT, "Stack:\n")
+
+        for item in reversed(self.element):
+            if isinstance(item, list):  # ★ NEW detects queue
+                s_display.insert(tk.INSERT, f"[Queue: {item}]\n")
+            else:
+                s_display.insert(tk.INSERT, f"{item}\n")
+
+    def push_queue(self, queue_obj):
+        self.element.append(queue_obj.element.copy())
+
 
 
 #Main Code
@@ -87,5 +97,9 @@ B5.place(x=200, y=300)
 
 B6 = tk.Button(top, text="Display Stack", width=10, height=2, command=s1.display_stack)
 B6.place(x=300, y=300)
+
+B7 = tk.Button(top, text="Push Queue", width=12, height=2, command=lambda: s1.push_queue(q1))
+B7.place(x=420, y=300)
+
 
 top.mainloop()
